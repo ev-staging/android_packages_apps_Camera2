@@ -1856,6 +1856,7 @@ public class CameraActivity extends QuickActivity
         mCurrentModule.pause();
         mOrientationManager.pause();
         mPanoramaViewHelper.onPause();
+        mLocationManager.recordLocation(false);
 
         mLocalImagesObserver.setForegroundChangeListener(null);
         mLocalImagesObserver.setActivityPaused(true);
